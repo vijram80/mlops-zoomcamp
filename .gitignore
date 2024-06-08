@@ -20,3 +20,5 @@ secrets/
 terraform.tfstate
 terraform.tfstate.backup
 titanic_clean.csv
+Dockerfile
+mlflow.dockerfile

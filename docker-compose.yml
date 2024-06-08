@@ -1,4 +1,15 @@
 services:
+  mlflow:
+    build:
+      context: .
+      dockerfile: mlflow.dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - "${PWD}/mlflow:/home/mlflow/"
+    networks:
+      - app-network
+
   magic-platform:
     env_file:
       - .env.dev
